@@ -19,12 +19,12 @@ k_B = 1.38e-23  # J/K
 # ==========================================
 # 1. SIDEBAR: CONTROLLI INTERATTIVI
 # ==========================================
-st.sidebar.header("Parametri Operativi")
+st.sidebar.header("Network Parameters")
 
-d_m = st.sidebar.slider("Distanza Link (m)", 100, 1000, 500, step=50)
-iso_dB = st.sidebar.slider("Isolamento Antenna (dB)", 40, 80, 55, step=1)
-Ptx_dBm = st.sidebar.slider("Potenza TX (dBm)", -10, 20, 0, step=1)
-B_MHz = st.sidebar.slider("Banda del Canale (MHz)", 250, 2000, 1000, step=50)
+d_m = st.sidebar.slider("Link Distance (m)", 100, 1000, 500, step=50)
+iso_dB = st.sidebar.slider("Antenna Isolation(dB)", 40, 80, 55, step=1)
+Ptx_dBm = st.sidebar.slider("TX Power(dBm)", -10, 20, 0, step=1)
+B_MHz = st.sidebar.slider("Bandwidth (MHz)", 250, 2000, 1000, step=50)
 NF_dB = st.sidebar.slider("Noise Figure RX (dB)", 4, 10, 6, step=1)
 
 B_Hz = B_MHz * 1e6
